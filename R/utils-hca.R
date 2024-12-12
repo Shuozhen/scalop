@@ -13,7 +13,7 @@
     if (!is_square(m)) m = t(m)
     if (!is.null(max.dist)) {
         if (is_square(m) && (max(diag(m)) != max.dist)) {
-            warning("<max.dist> = ", max.dist, " but <m> diagonal = ", unique(diag(m)), "...")
+            warning("<max.dist> = ", max.dist, " but <m> diagonal = ", max(diag(m)), "...")
         }
         m = max.dist - m
     }
